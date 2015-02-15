@@ -87,7 +87,7 @@ We can access our people database from the cloud, but now we need to create an a
 
 Using the Xamarin IDE, open the **XamarinWebAPI_iOS.sln** file, which utilizes everything within the Xamarin_Web_API_iOS folder.
 
-![Loading the Xamarin solution[3]
+![Loading the Xamarin solution[Xamarin]
 
 #### iOS Project Overview 
 You'll see that this is comprised of several parts:
@@ -150,6 +150,6 @@ Initial build of the app
 
 
   [1]: http://www.davidvoyles.wordpress.com "My website"
-  [2]: https://onedrive.live.com/redir?resid=51CCFDB424CB429E!300009&authkey=!AHTQ-p99tnhk7ao&v=3&ithint=photo%2cpng "Xamarin"
-  [3]: https://onedrive.live.com/redir?resid=51CCFDB424CB429E!300010&authkey=!AMuP4Dt0oJuqdrA&v=3&ithint=photo%2cpng "Star Wars API"
+  [Xamarin]: https://onedrive.live.com/redir?resid=51CCFDB424CB429E!300009&authkey=!AHTQ-p99tnhk7ao&v=3&ithint=photo%2cpng "Xamarin"
+  [Star Wars]: https://onedrive.live.com/redir?resid=51CCFDB424CB429E!300010&authkey=!AMuP4Dt0oJuqdrA&v=3&ithint=photo%2cpng "Star Wars API"
 
