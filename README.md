@@ -88,11 +88,12 @@ We can access our people database from the cloud, but now we need to create an a
 1. Using the Xamarin IDE, open the **XamarinWebAPI_iOS.sln** file, which utilizes everything within the Xamarin_Web_API_iOS folder.
 2. INSERT IMAGE 1
 
+#### iOS Project Overview ####
 You'll see that this is comprised of several parts:
 -**References folder:** This is where files for the source code, resources, user interface, and assembly references are managed. 
 -**Components folder:**  Components are a powerful feature that allows user interface components as well as libraries and themes to easily be added to a project. This is where we'll add [RestSharp](https://github.com/restsharp/RestSharp/wiki) to our project.
 
-Take a look at **TableSource.cs**. This can use any data structure, from a simple string array (as shown in this example) to a List <> or other collection. The implementation of UITableViewSource methods isolates the table from the underlying data structure. [Find more info on it here.](http://developer.xamarin.com/guides/ios/user_interface/tables/part_2_-_populating_a_table_with_data/)
+Take a look at **TableSource.cs**. This can use any data structure, from a simple string array, to a List <> or other collection. The implementation of UITableViewSource methods isolates the table from the underlying data structure. [Find more info on it here.](http://developer.xamarin.com/guides/ios/user_interface/tables/part_2_-_populating_a_table_with_data/)
 
 We also have **Main.cs**, which is the entry point for our application. We won't be making any changes here. 
 
@@ -100,7 +101,36 @@ The **Person.cs** class is where we create a model to map the information from o
 
 Inside that class, we are utilzing a feature of RestSharp, to normalize the JSON that we're returning from the API. **	[RestSharp.Serializers.SerializeAs(Name = "name")]** Depending on the API we are getting our information from, we may be returning a on object with a property of "Name" or "name". Because JSON is case sensative, we need to make sure that we can accept either spelling. 
 
+[INSERT PIC 2]
 The Star Wars API uses "name" in its API, while we use "Name" in our API. 
+
+**HomeScreen.cs** is where all of our magic is happening. We'll be drawing text to the screen and parsing the APIs from here.
+
+2. Open the **HomeScreen.cs** file and explore that. 
+
+The first thing we do here is load our page in the **ViewDidLoad()** function. This calls our other funcitons, and the apporipriate API. 
+
+The **BuildTable()** function is called first, which creates a table on the home screen. We are also creating an event handler, called **tableSource.OnRowSelected**. When a user touches a row, we have an alert window pop-up, with the information from the home screen.
+
+3. Looking at the LoadFromStarWarsAPI() function
+
+This is what actually calls the Star Wars API. We're creating a request object, which states that we want to access the database, and start within the "Results" path of the JSON object that is returned.  The **resource** property appends **/people/** onto our call, which we'll go over in a minute. 
+
+Next up, we create a client object, which contains the web address for the HTTP request. The address we are trying to hit is **http://swapi.co/api**. When we make our call, we now append the resource property to it, so our actual request is to **http://swapi.co/api/people/**.
+
+The lambda expression which follows, populates a table with the information from our database, then reloads the table with the new information we just received from the API. 
+
+4. Looking at the LoadFromWebAPI() function
+
+This is nearly identical to the LoadFromStarWarsAPI function. All that we're changing here is the address we are making a request to.
+
+5. Deploying to the iOS simulator
+
+We can only have one of these Load functions active at each time. Comment out one of them in your **BuildTable()** function.
+
+In the top-left corner of the Xamarin IDE, press the Debug button (triangle), and your iOS simulator should appear shortly. 
+
+NOTE: If you haven't used your Web API in a while, it may take a few seconds for that virtual machine to spin up, so the time it takes to return your Person results may be a few moments.
 
 
 
