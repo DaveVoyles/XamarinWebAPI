@@ -130,7 +130,7 @@ We can only have one of these Load functions active at each time. Comment out on
 
 In the top-left corner of the Xamarin IDE, press the Debug button (triangle), and your iOS simulator should appear shortly. 
 
-NOTE: If you haven't used your Web API in a while, it may take a few seconds for that virtual machine to spin up, so the time it takes to return your Person results may be a few moments.
+**NOTE:** If you haven't used your Web API in a while, it may take a few seconds for that virtual machine to spin up, so the time it takes to return your Person results may be a few moments.
 
 
 
