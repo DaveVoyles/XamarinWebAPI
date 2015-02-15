@@ -106,13 +106,13 @@ The Star Wars API uses "name" in its API, while we use "Name" in our API.
 
 **HomeScreen.cs** is where all of our magic is happening. We'll be drawing text to the screen and parsing the APIs from here.
 
-3. Open the **HomeScreen.cs** file and explore that. 
+1. Open the **HomeScreen.cs** file and explore that. 
 
 The first thing we do here is load our page in the **ViewDidLoad()** function. This calls our other funcitons, and the apporipriate API. 
 
 The **BuildTable()** function is called first, which creates a table on the home screen. We are also creating an event handler, called **tableSource.OnRowSelected**. When a user touches a row, we have an alert window pop-up, with the information from the home screen.
 
-4. Looking at the LoadFromStarWarsAPI() function
+2. Looking at the LoadFromStarWarsAPI() function
 
 This is what actually calls the Star Wars API. We're creating a request object, which states that we want to access the database, and start within the "Results" path of the JSON object that is returned.  The **resource** property appends **/people/** onto our call, which we'll go over in a minute. 
 
@@ -120,11 +120,11 @@ Next up, we create a client object, which contains the web address for the HTTP 
 
 The lambda expression which follows, populates a table with the information from our database, then reloads the table with the new information we just received from the API. 
 
-5. Looking at the LoadFromWebAPI() function
+3. Looking at the LoadFromWebAPI() function
 
 This is nearly identical to the LoadFromStarWarsAPI function. All that we're changing here is the address we are making a request to.
 
-6. Deploying to the iOS simulator
+4. Deploying to the iOS simulator
 
 We can only have one of these Load functions active at each time. Comment out one of them in your **BuildTable()** function.
 
