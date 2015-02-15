@@ -18,6 +18,8 @@ By the end of this lab you will be able to:
 This application can also work for Windows Phone or Android by creating a different UI for those platforms. Xamarin has a number of tutorials on how to do this.
 
 With this app, we'll be able to add "People" to our database hosted in Azure by using our the MVC part of our Web API project, and we'll be able to view the "People" from our Xamarin iOS app. 
+
+We'll also be able to use the Star Wars API to return information from their database.
  
 ### Description
 This open source Xamarin app was written using Xamarin, which runs on OS X and Windows.  
@@ -54,6 +56,7 @@ Use this as a template to get started with your own application. Remove some bit
 
 ### Opening the project
 This project contains Two (2) solutions:
+
 1. XamarinWebAPI
 This is the Visual Studio Solution where we create our ASP.NET MVC and Web API content. Later, we push it to Azure so that we can access it from our device. We use MVC to create so that we can view and edit our database from the browser. 
 
@@ -63,9 +66,14 @@ This is our mobile application which consumes the Web API project.
 ## Starting the Web API project
 1. Step-by-step instructions are included in this web camp lab I taught across the US in the spring of 2015. 
 2. Cick on te DEMO.html file, which opens the tutorial. It will have you creating an MVC and Web API project.
+
+You'll need an Azure account to host your project in the cloud and have your application access it. You can sign up for BizSpark by [sending me an e-mail](mailto:Dvoyles@microsoft.com), or grabbing a [one month day trial from here.](http://azure.microsoft.com/en-us/pricing/free-trial/)
+
 3. Once completed, [push your Web API project to Azure](http://www.asp.net/web-api/overview/data/using-web-api-with-entity-framework/part-10).
 
+
 ## Using the Web API project
+At any point, you can open the solution I've created view the source so that you can step through that and have a better understanding of how the project works.
 
 We now have an API that we can hit from any app or website, by navigating to [xamarinwebapi.azurewebsites.net](xamarinwebapi.azurewebsites.net).
 
@@ -74,30 +82,26 @@ If you want to make changes to the database, you can navigate to the MVC control
 If you want to view the people in our database, you can navigate to the Web API by poiting your browser or app towards [xamarinwebapi.azurewebsites.net/api/apiperson](xamarinwebapi.azurewebsites.net/api/apiperson)
 
 
-
 ### Starting the iOS project 
-1. With your code open, on the top of the screen look for the Emulate tab
-![13](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/13.gif)
-2. You can select the **device type** in the top-left corner to change for the device you want to test on
+We can access our people database from the cloud, but now we need to create an application to consume this API.
 
-### Debugging the app on a physical device
-1.  With the IDE open, click on the **TEST** Tab on the top of the screen
-(add TEST screen shot here)
-2.  You will be asked to sync with the server. Click *Sync.*
-![14](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/14.gif)
-3.  Scan the QR code on your computer, using your phone. This will automatically open the Intel App on your phone, and point it towards the URL that your app is hosted at.
+1. Using the Xamarin IDE, open the **XamarinWebAPI_iOS.sln** file, which utilizes everything within the Xamarin_Web_API_iOS folder.
+2. INSERT IMAGE 1
 
-![15](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/15.gif)
-4. Give it a few moments to open the app, download your file, and open the file.
+You'll see that this is comprised of several parts:
+-**References folder:** This is where files for the source code, resources, user interface, and assembly references are managed. 
+-**Components folder:**  Components are a powerful feature that allows user interface components as well as libraries and themes to easily be added to a project. This is where we'll add [RestSharp](https://github.com/restsharp/RestSharp/wiki) to our project.
 
-### Building for a device
-1. With the IDE open, click on the **BUILD** tab
-2. Select the device that you want to build for
-![8](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/8.gif)
-3. It will upload your project to the Intel servers
-![9](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/9.gif)
-4. Follow the instructions for each platform, and include the appropriate image sizes. ![10](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/10.gif)
-![11](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/11.gif)
+Take a look at **TableSource.cs**. This can use any data structure, from a simple string array (as shown in this example) to a List <> or other collection. The implementation of UITableViewSource methods isolates the table from the underlying data structure. [Find more info on it here.](http://developer.xamarin.com/guides/ios/user_interface/tables/part_2_-_populating_a_table_with_data/)
+
+We also have **Main.cs**, which is the entry point for our application. We won't be making any changes here. 
+
+The **Person.cs** class is where we create a model to map the information from our Web API. If you look at the Web API project, you'll see that we also have a Person.cs model there too. 
+
+Inside that class, we are utilzing a feature of RestSharp, to normalize the JSON that we're returning from the API. **	[RestSharp.Serializers.SerializeAs(Name = "name")]** Depending on the API we are getting our information from, we may be returning a on object with a property of "Name" or "name". Because JSON is case sensative, we need to make sure that we can accept either spelling. 
+
+The Star Wars API uses "name" in its API, while we use "Name" in our API. 
+
 
 
 ----------
@@ -115,5 +119,4 @@ Initial build of the app
 
 
   [1]: http://www.davidvoyles.wordpress.com "My website "
-  [2]: http://xdk-software.intel.com/
-  [3]: https://github.com/DaveVoyles/Ska-Studios-Xplatform
+
