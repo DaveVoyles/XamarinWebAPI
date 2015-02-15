@@ -87,7 +87,7 @@ We can access our people database from the cloud, but now we need to create an a
 
 Using the Xamarin IDE, open the **XamarinWebAPI_iOS.sln** file, which utilizes everything within the Xamarin_Web_API_iOS folder.
 
-![Loading the Xamarin solution[Xamarin]
+ ![4](https://onedrive.live.com/redir?resid=51CCFDB424CB429E!300009&authkey=!AHTQ-p99tnhk7ao&v=3&ithint=photo%2cpng)
 
 #### iOS Project Overview 
 You'll see that this is comprised of several parts:
