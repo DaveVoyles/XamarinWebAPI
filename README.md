@@ -72,7 +72,7 @@ You'll need an Azure account to host your project in the cloud and have your app
 3. Once completed, [push your Web API project to Azure](http://www.asp.net/web-api/overview/data/using-web-api-with-entity-framework/part-10).
 
 
-## Using the Web API project
+## Using the Web API project 
 At any point, you can open the solution I've created view the source so that you can step through that and have a better understanding of how the project works.
 
 We now have an API that we can hit from any app or website, by navigating to [xamarinwebapi.azurewebsites.net](xamarinwebapi.azurewebsites.net).
@@ -82,13 +82,13 @@ If you want to make changes to the database, you can navigate to the MVC control
 If you want to view the people in our database, you can navigate to the Web API by poiting your browser or app towards [xamarinwebapi.azurewebsites.net/api/apiperson](xamarinwebapi.azurewebsites.net/api/apiperson)
 
 
-### Starting the iOS project ###
+### Starting the iOS project 
 We can access our people database from the cloud, but now we need to create an application to consume this API.
 
 1. Using the Xamarin IDE, open the **XamarinWebAPI_iOS.sln** file, which utilizes everything within the Xamarin_Web_API_iOS folder.
 2. INSERT IMAGE 1
 
-#### iOS Project Overview ####
+#### iOS Project Overview 
 You'll see that this is comprised of several parts:
 -**References folder:** This is where files for the source code, resources, user interface, and assembly references are managed. 
 -**Components folder:**  Components are a powerful feature that allows user interface components as well as libraries and themes to easily be added to a project. This is where we'll add [RestSharp](https://github.com/restsharp/RestSharp/wiki) to our project.
