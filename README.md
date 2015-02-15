@@ -127,7 +127,7 @@ This is nearly identical to the LoadFromStarWarsAPI function. All that we're cha
 
 #### Deploying to the iOS simulator
 
-![iOS Smulator] (dl.dropboxusercontent.com/s/3m6c0nzohwvdsed/iOS%20Simulator.png?dl=0)
+![iOS Smulator] (https://dl.dropboxusercontent.com/s/3m6c0nzohwvdsed/iOS%20Simulator.png?dl=0)
 We can only have one of these Load functions active at each time. Comment out one of them in your **BuildTable()** function.
 
 In the top-left corner of the Xamarin IDE, press the Debug button (triangle), and your iOS simulator should appear shortly. 
