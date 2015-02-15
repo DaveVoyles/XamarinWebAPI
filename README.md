@@ -82,7 +82,7 @@ If you want to make changes to the database, you can navigate to the MVC control
 If you want to view the people in our database, you can navigate to the Web API by poiting your browser or app towards [xamarinwebapi.azurewebsites.net/api/apiperson](xamarinwebapi.azurewebsites.net/api/apiperson)
 
 
-### Starting the iOS project 
+### Starting the iOS project ###
 We can access our people database from the cloud, but now we need to create an application to consume this API.
 
 1. Using the Xamarin IDE, open the **XamarinWebAPI_iOS.sln** file, which utilizes everything within the Xamarin_Web_API_iOS folder.
