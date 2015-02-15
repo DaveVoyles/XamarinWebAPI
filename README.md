@@ -16,6 +16,8 @@ By the end of this lab you will be able to:
 - Create an iOS app using Xamarin
 
 This application can also work for Windows Phone or Android by creating a different UI for those platforms. Xamarin has a number of tutorials on how to do this.
+
+With this app, we'll be able to add "People" to our database hosted in Azure by using our the MVC part of our Web API project, and we'll be able to view the "People" from our Xamarin iOS app. 
  
 ### Description
 This open source Xamarin app was written using Xamarin, which runs on OS X and Windows.  
@@ -34,6 +36,7 @@ Use this as a template to get started with your own application. Remove some bit
  - Building, emulating and testing of dozens of deviecs from within Xamarin (iOS, Windows Phone, Android)
  - Deploy to your phone with one click
  - Use the [Star Wars API](http://swapi.co/) to access a database of information about that universe 
+ - Utilizes [Restharp](http://restsharp.org/), which is a simple REST and HTTP API Client for .NET
 
 ### Requirements
 - You can use Xamarin tools on either Windows or OS X
@@ -50,18 +53,29 @@ Use this as a template to get started with your own application. Remove some bit
 
 
 ### Opening the project
- 3. Launch the XDK. In the top-left corner, look for *Projects -> New Project*
- ![4](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/4.gif)
- 4. Click on *Import an Existing App*
- 
- ![5](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/5.gif)
- 5. Open the Ska-Studios folder on your desktop
- ![6](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/6.gif)
- 6. Name the project
- 7. You will now have a working project to build from. Start with Index.html
-![7](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/7.gif)
+This project contains Two (2) solutions:
+1. XamarinWebAPI
+This is the Visual Studio Solution where we create our ASP.NET MVC and Web API content. Later, we push it to Azure so that we can access it from our device. We use MVC to create so that we can view and edit our database from the browser. 
 
-### Emulating the app in other devices
+2. Xamarin_Web_API_iOS
+This is our mobile application which consumes the Web API project. 
+
+## Starting the Web API project
+1. Step-by-step instructions are included in this web camp lab I taught across the US in the spring of 2015. 
+2. Cick on te DEMO.html file, which opens the tutorial. It will have you creating an MVC and Web API project.
+3. Once completed, [push your Web API project to Azure](http://www.asp.net/web-api/overview/data/using-web-api-with-entity-framework/part-10).
+
+## Using the Web API project
+
+We now have an API that we can hit from any app or website, by navigating to [xamarinwebapi.azurewebsites.net](xamarinwebapi.azurewebsites.net).
+
+If you want to make changes to the database, you can navigate to the MVC controller for People by going here: [xamarinwebapi.azurewebsites.net/person](xamarinwebapi.azurewebsites.net/api/apiperson)
+
+If you want to view the people in our database, you can navigate to the Web API by poiting your browser or app towards [xamarinwebapi.azurewebsites.net/api/apiperson](xamarinwebapi.azurewebsites.net/api/apiperson)
+
+
+
+### Starting the iOS project 
 1. With your code open, on the top of the screen look for the Emulate tab
 ![13](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/13.gif)
 2. You can select the **device type** in the top-left corner to change for the device you want to test on
@@ -86,40 +100,12 @@ Use this as a template to get started with your own application. Remove some bit
 ![11](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/11.gif)
 
 
-
-----------
-
-## FAQ
-**Why do I need to create an account?**
-
-Your app is stored locally on your own machine, as well as Intel's servers. When you deploy your app to a physical device, it is connecting via a URL, which is a link to your app on Intel's servers.
-
-
-**When I try to open an external web page (ie - one that I did not write), a new window pops up within emulator.**
-
-This is a bug. On your physical device, it will load within your application. On the emulator though, it creates a new window.
-
-**What is the purpose of the Intel App Preview app?**
-
-This creates a debug container which points to your app stored on Intel's servers, and is used for testing. 
-
-**There is so much JavaScript -- where do I start?**
-
-The only .js file that I had to write for this project was *ska.js*. It's very well documented. Make any changes that you need in there. 
-
-
-**Who is Ska Studios?**
-
-Some friends in Seattle who make awesome video games. [Check out their titles](http://ska-studios.com/) on XBLA and XBLIG, as well as their upcoming game Salt and Sanctuary on PS4.
-
 ----------
 ## Resources
 
-- [Power Point: How to build cross platform mobile apps](http://davevoyles.azurewebsites.net/speaking-engagements-power-points/)
+- [Video: Creating your first iOS app using Xamarin](https://www.youtube.com/watch?v=RnW7m0acxg0)
 - [BizSpark, for free MSFT dev licenses and web hosting](http://davevoyles.azurewebsites.net/bizspark-free-software-cloud-services-o/)
-- [Windows store image generator](http://wat-docs.azurewebsites.net/Tools)
 - [E-mail me with questions](mailto:Dvoyles@microsoft.com "Dvoyles@microsoft.com")
-- [ jQuery mobile documentation](http://api.jquerymobile.com/)
 
 ----------
 
