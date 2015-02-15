@@ -87,7 +87,7 @@ We can access our people database from the cloud, but now we need to create an a
 
 Using the Xamarin IDE, open the **XamarinWebAPI_iOS.sln** file, which utilizes everything within the Xamarin_Web_API_iOS folder.
 
- !(https://dl.dropboxusercontent.com/s/95costoqlm0jid3/Xamarin%20Solution.png?dl=0)
+ ![Xamarin IDE](https://dl.dropboxusercontent.com/s/95costoqlm0jid3/Xamarin%20Solution.png?dl=0)
 
 #### iOS Project Overview 
 You'll see that this is comprised of several parts:
@@ -102,7 +102,7 @@ The **Person.cs** class is where we create a model to map the information from o
 
 Inside that class, we are utilzing a feature of RestSharp, to normalize the JSON that we're returning from the API. **	[RestSharp.Serializers.SerializeAs(Name = "name")]** Depending on the API we are getting our information from, we may be returning a on object with a property of "Name" or "name". Because JSON is case sensative, we need to make sure that we can accept either spelling. 
 
- !(https://dl.dropboxusercontent.com/s/3hfkd9jfh7rfcl5/Star%20Wars%20API.png?dl=0)
+ ![Star Wars API](https://dl.dropboxusercontent.com/s/3hfkd9jfh7rfcl5/Star%20Wars%20API.png?dl=0)
 The Star Wars API uses "name" in its API, while we use "Name" in our API. 
 
 **HomeScreen.cs** is where all of our magic is happening. We'll be drawing text to the screen and parsing the APIs from here.
@@ -150,6 +150,3 @@ Initial build of the app
 
 
   [1]: http://www.davidvoyles.wordpress.com "My website"
-  [Xamarin]: https://onedrive.live.com/redir?resid=51CCFDB424CB429E!300009&authkey=!AHTQ-p99tnhk7ao&v=3&ithint=photo%2cpng "Xamarin"
-  [Star Wars]: https://onedrive.live.com/redir?resid=51CCFDB424CB429E!300010&authkey=!AMuP4Dt0oJuqdrA&v=3&ithint=photo%2cpng "Star Wars API"
-
