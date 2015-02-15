@@ -14,39 +14,40 @@ By the end of this lab you will be able to:
 
 - Create an ASP.NET MVC & Web API Project
 - Create an iOS app using Xamarin
+
+This application can also work for Windows Phone or Android by creating a different UI for those platforms. Xamarin has a number of tutorials on how to do this.
  
 ### Description
 This open source Xamarin app was written using Xamarin, which runs on OS X and Windows.  
 
-[Xamarin(http://xamarin.com/download) is a a set of tools that allows developers to write mobile applications using C# and .NET.
+[Xamarin](http://xamarin.com/download) is a set of tools that allows developers to write mobile applications using C# and .NET.
 
-With the [Intel XDK](http://xdk-software.intel.com/), you can write for, test, and deploy to many devices without having to ever install Visual Studio xCode, or Eclipse.
+With the [Visual Studio Community Edition](http://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx), you can write applications in a variety of languages for both devices and web sites. Any individual developer can use Visual Studio Community to create their own free or paid apps.
 
 Use this as a template to get started with your own application. Remove some bits of code, and add your own. 
 
 
 ### Features
- - Runs on Win8, Win Phone 8, iOS, Android, & Browsers
- - [jQuery](http://jquerymobile.com/) mobile for speed and navigation between pages
- - [Bootstrap](http://getbootstrap.com) for responsive web design
- - [Single page application](http://en.wikipedia.org/wiki/Single-page_application)
- - No need for multiple IDEs 
- - Emulating and testing of dozens of deviecs from within the IDE
+ - The mobile applications runs on iOS, while the ASP.NET project is a website
+ - [Web API](http://www.asp.net/web-api) to perform CRUD operations on our iOS app from the cloud
+ - [ASP.NET MVC](http://www.asp.net/mvc) to perform CRUD operations from the browser
+ - Building, emulating and testing of dozens of deviecs from within Xamarin (iOS, Windows Phone, Android)
  - Deploy to your phone with one click
+ - Use the [Star Wars API](http://swapi.co/) to access a database of information about that universe 
 
 ### Requirements
-- You can use any Cordova tool for this, but I prefer the [Intel XDK](http://xdk-software.intel.com/), as it works on a Mac or Windows. 
-- PC or Mac
+- You can use Xamarin tools on either Windows or OS X
+- PC for the Visual Studio (ASP.NET parts)
+- Mac for the iOS parts
 
 
 ### Setup
 
- 1.  Download the source [from GitHub][3] ![1](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/1.png)
- 2.  Unzip the folder, and put the *Ska-Studios* folder on your desktop.
- 3.  Download & install the [Intel XDK](http://xdk-software.intel.com/) (this may take a while)
- 3.  Launch Intel XDK and In the top-right corner, log-in or create a new Intel account.
- ![2](http://phlcollective.azurewebsites.net/img/Intel%20XDK%20Instructions/3.gif)
- 4.  On your phone, download the **Intel App Preview** app from your device's marketplace *(Apple App Store, Google Play, Windows Store).*
+ 1.  Download the source [from GitHub](https://github.com/DaveVoyles/XamarinWebAPI/)
+ 2.  Download & install the [Visual Studio Community Edition](http://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx) (this may take a while)
+ 3.  Download & Install [Xamarin tools](http://xamarin.com/download). This will install a number of components for you, including: Xamarin.iOS, Xamarin.Android, Xamarin.Mac, & Xamarin Studio
+
+
 
 ### Opening the project
  3. Launch the XDK. In the top-left corner, look for *Projects -> New Project*
