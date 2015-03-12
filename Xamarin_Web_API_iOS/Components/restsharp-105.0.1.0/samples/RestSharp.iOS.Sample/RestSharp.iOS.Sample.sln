@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSharp.iOS.Sample", "RestSharp.iOS.Sample.csproj", "{79C41EA7-8F04-499E-8930-5AC60D959C67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Ad-Hoc|iPhone.ActiveCfg = Debug|iPhone
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Ad-Hoc|iPhone.Build.0 = Debug|iPhone
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.AppStore|iPhone.ActiveCfg = Debug|iPhone
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.AppStore|iPhone.Build.0 = Debug|iPhone
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Debug|iPhone.Build.0 = Debug|iPhone
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Release|iPhone.ActiveCfg = Release|iPhone
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Release|iPhone.Build.0 = Release|iPhone
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{79C41EA7-8F04-499E-8930-5AC60D959C67}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Ad-Hoc|iPhone.ActiveCfg = Debug|iPhone
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Ad-Hoc|iPhone.Build.0 = Debug|iPhone
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.AppStore|iPhone.ActiveCfg = Debug|iPhone
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.AppStore|iPhone.Build.0 = Debug|iPhone
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Release|iPhone.Build.0 = Release|iPhone
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E9A9D1C5-4E06-4D31-9809-A97188C70B2D}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = RestSharp.iOS.Sample.csproj
+	EndGlobalSection
+EndGlobal
