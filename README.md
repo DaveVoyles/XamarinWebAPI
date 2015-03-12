@@ -121,6 +121,7 @@ Next up, we create a client object, which contains the web address for the HTTP 
 
 The lambda expression which follows, populates a table with the information from our database, then reloads the table with the new information we just received from the API. 
 
+Raymond Camden, an Evangelist and friend at IBM recently wrote a wrapper for this API, which makes it even easier to make calls to the database! [You can find it here] (https://github.com/cfjedimaster/SWAPI-Wrapper )
 #### Looking at the LoadFromWebAPI() function
 
 This is nearly identical to the LoadFromStarWarsAPI function. All that we're changing here is the address we are making a request to.
