@@ -1,6 +1,6 @@
 # XamarinWebAPI
 ### Author(s): Dave Voyles | [@DaveVoyles](http://www.twitter.com/DaveVoyles)
-### URL: [www.DavidVoyles.wordpress.com][1]
+### URL: [www.DavieVoylescom][1]
 
 Sample project for using ASP.NET Web API in Xamarin iOS apps
 ----------
@@ -151,4 +151,4 @@ In the top-left corner of the Xamarin IDE, press the Debug button (triangle), an
 Initial build of the app
 
 
-  [1]: http://www.davidvoyles.wordpress.com "My website"
+  [1]: http://www.davevoyles.com "My website"
