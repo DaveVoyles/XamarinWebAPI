@@ -38,7 +38,7 @@ Use this as a template to get started with your own application. Remove some bit
  - Building, emulating and testing of dozens of deviecs from within Xamarin (iOS, Windows Phone, Android)
  - Deploy to your phone with one click
  - Use the [Star Wars API](http://swapi.co/) to access a database of information about that universe 
- - Utilizes [Restharp](http://restsharp.org/), which is a simple REST and HTTP API Client for .NET
+ - Utilizes [RestSharp](http://restsharp.org/), which is a simple REST and HTTP API Client for .NET
 
 ### Requirements
 - You can use Xamarin tools on either Windows or OS X
