@@ -64,7 +64,7 @@ This is the Visual Studio Solution where we create our ASP.NET MVC and Web API c
 This is our mobile application which consumes the Web API project. 
 
 ## Starting the Web API project
-1. Step-by-step instructions are included [in this web camp lab](https://microsoft-my.sharepoint.com/personal/dvoyles_microsoft_com/Documents/Shared%20with%20Everyone/2a.%20One%20ASPNET%20Hybrid%20site.zip) I taught across the US in the spring of 2015. 
+1. Step-by-step instructions are included [in this web camp lab](https://onedrive.live.com/redir?resid=51CCFDB424CB429E!291293&authkey=!AOlR2jxnL5l_wbo&ithint=file%2czip) I taught across the US in the spring of 2015. 
 2. Cick on te DEMO.html file, which opens the tutorial. It will have you creating an MVC and Web API project.
 
 You'll need an Azure account to host your project in the cloud and have your application access it. You can sign up for BizSpark by [sending me an e-mail](mailto:Dvoyles@microsoft.com), or grabbing a [one month day trial from here.](http://azure.microsoft.com/en-us/pricing/free-trial/)
